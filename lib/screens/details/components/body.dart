@@ -18,6 +18,30 @@ class Body extends StatelessWidget {
             country: "Indonesia",
             price: 50000,
           ),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              SizedBox(
+                width: size.width / 2,
+                height: 84,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: kPrimaryColor,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(20),
+                      ),
+                    ),
+                  ),
+                  onPressed: () {},
+                  child: const Text(
+                    "Buy Now",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
