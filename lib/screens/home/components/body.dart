@@ -1,3 +1,4 @@
+import 'package:app_plant/screens/home/components/feature_items.dart';
 import 'package:app_plant/screens/home/components/header_with_searchbox.dart';
 import 'package:app_plant/screens/home/components/recomended_Item.dart';
 import 'package:app_plant/screens/home/components/title_with_button.dart';
@@ -16,6 +17,7 @@ class Body extends StatelessWidget {
           TitleWithButton(press: () {}, title: "Recomended"),
           RecomendedItem(),
           TitleWithButton(press: () {}, title: "Featured Plants"),
+          FeatureItems(),
         ],
       ),
     );
