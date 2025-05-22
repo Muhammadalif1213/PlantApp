@@ -1,7 +1,43 @@
 import 'package:app_plant/constants.dart';
 import 'package:flutter/material.dart';
 
+class RecomendedItem extends StatelessWidget {
+  const RecomendedItem({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          RecomendedCard(
+            image: "assets/images/Flower1.jpg",
+            title: "Petunia",
+            country: "Indonesia",
+            press: () {
+            },
+            price: 50000,
+          ),
+          RecomendedCard(
+            image: "assets/images/Flower2.jpg",
+            title: "Mawar",
+            country: "UK",
+            press: () {
+            },
+            price: 100000,
+          ),
+          RecomendedCard(
+            image: "assets/images/Flower3.jpg",
+            title: "Hibiscus",
+            country: "USA",
+            press: () {},
+            price: 150000,
+          ),
+        ],
+      ),
+    );
+  }
+}
 
 class RecomendedCard extends StatelessWidget {
   const RecomendedCard({

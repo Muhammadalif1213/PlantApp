@@ -1,4 +1,5 @@
 import 'package:app_plant/screens/home/components/header_with_searchbox.dart';
+import 'package:app_plant/screens/home/components/recomended_Item.dart';
 import 'package:app_plant/screens/home/components/title_with_button.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,7 @@ class Body extends StatelessWidget {
         children: <Widget>[
           HeaderWithSearchBox(size: size),
           TitleWithButton(press: () {}, title: "Recomended"),
+          RecomendedItem(),
         ],
       ),
     );
