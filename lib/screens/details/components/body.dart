@@ -16,6 +16,7 @@ class Body extends StatelessWidget {
           TitleAndPrice(
             title: "Petunia",
             country: "Indonesia",
+            price: 50000,
           ),
         ],
       ),
