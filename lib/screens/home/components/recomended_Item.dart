@@ -1,4 +1,5 @@
 import 'package:app_plant/constants.dart';
+import 'package:app_plant/screens/details/components/details_screen.dart';
 import 'package:flutter/material.dart';
 
 class RecomendedItem extends StatelessWidget {
@@ -15,6 +16,10 @@ class RecomendedItem extends StatelessWidget {
             title: "Petunia",
             country: "Indonesia",
             press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DetailScreen()),
+              );
             },
             price: 50000,
           ),
