@@ -1,5 +1,5 @@
 import 'package:app_plant/constants.dart';
-import 'package:app_plant/screens/details/components/details_screen.dart';
+import 'package:app_plant/screens/details/details_screen.dart';
 import 'package:flutter/material.dart';
 
 class RecomendedItem extends StatelessWidget {
