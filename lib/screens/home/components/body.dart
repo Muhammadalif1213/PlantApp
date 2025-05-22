@@ -15,6 +15,7 @@ class Body extends StatelessWidget {
           HeaderWithSearchBox(size: size),
           TitleWithButton(press: () {}, title: "Recomended"),
           RecomendedItem(),
+          TitleWithButton(press: () {}, title: "Featured Plants"),
         ],
       ),
     );
