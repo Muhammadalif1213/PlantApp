@@ -40,6 +40,18 @@ class Body extends StatelessWidget {
                   ),
                 ),
               ),
+              Expanded(
+                child: SizedBox(
+                  height: 75,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "Description",
+                      style: TextStyle(color: kPrimaryColor),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ],
