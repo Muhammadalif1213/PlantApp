@@ -1,4 +1,5 @@
 import 'package:app_plant/constants.dart';
+import 'package:app_plant/screens/details/components/icon_card.dart';
 import 'package:flutter/material.dart';
 
 class ImageAndIcons extends StatelessWidget {
@@ -37,6 +38,10 @@ class ImageAndIcons extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
+                    IconCard(icon: Icons.sunny),
+                    IconCard(icon: Icons.thermostat),
+                    IconCard(icon: Icons.opacity),
+                    IconCard(icon: Icons.air),
                   ],
                 ),
               ),
