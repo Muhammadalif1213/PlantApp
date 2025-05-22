@@ -1,9 +1,10 @@
 import 'package:app_plant/constants.dart';
+import 'package:app_plant/screens/home/home_screen.dart';
 import 'package:app_plant/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
-class MyBottomNavBar extends StatelessWidget {
-  const MyBottomNavBar({super.key});
+class ProfileBottomNavBar extends StatelessWidget {
+  const ProfileBottomNavBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,15 @@ class MyBottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeScreen()),
+              );
+            },
+            icon: Icon(Icons.home_outlined),
+          ),
           IconButton(onPressed: () {}, icon: Icon(Icons.favorite_border)),
           IconButton(
             onPressed: () {
@@ -36,7 +45,7 @@ class MyBottomNavBar extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => ProfileScreen()),
               );
             },
-            icon: Icon(Icons.person_3_outlined),
+            icon: Icon(Icons.person_3),
           ),
         ],
       ),
