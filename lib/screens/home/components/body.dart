@@ -1,3 +1,4 @@
+import 'package:app_plant/constants.dart';
 import 'package:app_plant/screens/home/components/feature_items.dart';
 import 'package:app_plant/screens/home/components/header_with_searchbox.dart';
 import 'package:app_plant/screens/home/components/recomended_Item.dart';
@@ -18,6 +19,7 @@ class Body extends StatelessWidget {
           RecomendedItem(),
           TitleWithButton(press: () {}, title: "Featured Plants"),
           FeatureItems(),
+          SizedBox(height: kDefaultPadding,)
         ],
       ),
     );
